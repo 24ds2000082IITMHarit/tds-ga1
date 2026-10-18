@@ -1,15 +1,103 @@
+```html
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>My TDS Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <main>
-    <h1>My Tools in Data Science Portfolio</h1>
-    <p>This page is published with GitHub Pages.</p>
-    <p>Student email: <!--email_off-->24ds2000082@ds.study.iitm.ac.in<!--/email_off--></p>
-  </main>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-blue-200">
+  
+  <div class="max-w-5xl mx-auto px-6 py-16">
+    
+    <!-- Header Section (Contains required assignment elements) -->
+    <header class="text-center mb-16">
+      <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight mb-4">My Tools in Data Science Portfolio</h1>
+      <h2 class="text-xl md:text-2xl text-slate-600 font-medium mb-6">Harit Prem Rajput <span class="text-slate-400 mx-2">|</span> Data Analyst & IITM PG Diploma Candidate</h2>
+      <div class="flex flex-col md:flex-row items-center justify-center gap-4 text-sm text-slate-500">
+        <p class="bg-white px-4 py-2 rounded-full shadow-sm border border-slate-200">
+          Student email: <a href="mailto:24ds2000082@ds.study.iitm.ac.in" class="text-blue-600 font-semibold hover:underline"><!--email_off-->24ds2000082@ds.study.iitm.ac.in<!--/email_off--></a>
+        </p>
+        <p class="bg-blue-50 text-blue-700 px-4 py-2 rounded-full shadow-sm border border-blue-100 font-medium">
+          This page is published with GitHub Pages.
+        </p>
+      </div>
+    </header>
+
+    <!-- About & Skills Section -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+      <div class="md:col-span-2 bg-white rounded-2xl shadow-sm border border-slate-100 p-8">
+        <h3 class="text-2xl font-bold text-slate-900 mb-4">About Me</h3>
+        <p class="text-slate-600 leading-relaxed mb-4">
+          I am a Data Analyst specializing in FMCG promotional analytics, BigQuery data modeling, and automated workflows, currently working at ClicFlyer Analytics. I am pursuing a PG Diploma in Data Science at the Indian Institute of Technology Madras to deepen my expertise in machine learning and generative AI.
+        </p>
+        <p class="text-slate-600 leading-relaxed">
+          Beyond data analysis, I enjoy building full-stack web applications and integrating local AI models into practical tools to solve real-world problems.
+        </p>
+      </div>
+      <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-8">
+        <h3 class="text-2xl font-bold text-slate-900 mb-4">Tech Stack</h3>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-md font-medium">Python</span>
+          <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-md font-medium">SQL (BigQuery)</span>
+          <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-md font-medium">Power BI</span>
+          <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-md font-medium">FastAPI</span>
+          <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-md font-medium">React & Tailwind CSS</span>
+          <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-md font-medium">Shell Scripting</span>
+          <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-md font-medium">Local LLMs</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Featured Work Section -->
+    <h3 class="text-2xl font-bold text-slate-900 mb-6">Featured Projects & Applications</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+      
+      <!-- Project 1 -->
+      <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 hover:shadow-md transition-shadow">
+        <div class="flex items-center justify-between mb-4">
+          <h4 class="text-xl font-bold text-slate-800">TaskCall</h4>
+          <span class="text-xs font-bold uppercase tracking-wider text-green-600 bg-green-50 px-2 py-1 rounded">In Development</span>
+        </div>
+        <p class="text-slate-600 text-sm mb-4">
+          A voice-activated mobile task management application built with React Native and Tailwind CSS. Features local notification triggers that generate full-screen simulated call alerts and text-to-speech task dictation.
+        </p>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 hover:shadow-md transition-shadow">
+        <h4 class="text-xl font-bold text-slate-800 mb-4">SolarFlow & Quote</h4>
+        <p class="text-slate-600 text-sm mb-4">
+          A comprehensive web-based CRM and automated proposal generation tool for commercial solar installations. Handles customer energy load tracking, dynamic equipment specification scaling, and automated PDF quote creation.
+        </p>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 hover:shadow-md transition-shadow">
+        <h4 class="text-xl font-bold text-slate-800 mb-4">Geo-Attend</h4>
+        <p class="text-slate-600 text-sm mb-4">
+          A geofenced attendance tracking web application integrated with Google Sheets and Firebase, hosted on GitHub Pages. Enforces a strict 200-meter GPS accuracy radius for valid check-ins.
+        </p>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 hover:shadow-md transition-shadow">
+        <h4 class="text-xl font-bold text-slate-800 mb-4">TDS Data Engineering (IITM)</h4>
+        <p class="text-slate-600 text-sm mb-4">
+          Developed API services using FastAPI to merge multiple configuration layers with CLI overrides, alongside advanced shell scripting for automated hierarchical file reorganization and SHA-256 verification.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center border-t border-slate-200 pt-8 mt-8 text-slate-500 text-sm">
+      <p>&copy; 2026 Harit Prem Rajput. Built for IIT Madras Tools in Data Science.</p>
+    </footer>
+
+  </div>
 </body>
 </html>
+
+```
